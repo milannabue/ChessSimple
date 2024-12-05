@@ -12,7 +12,7 @@ ChessSimple is a chess app meant to be passed between two players on one phone. 
 * Android Studio
 
 ## Getting Started
-Download the zip file. ChessSimple is tested on a pixel 6, but can be on any screen size. Simply run it on android studio to test and play. There is no internet connection of extra downloads required. A tutorial of how to play is also included on the main screen.
+Download the files to run on android studio. ChessSimple is tested on a pixel 6, but can be on any screen size. Simply run it on android studio to test and play. There is no internet connection of extra downloads required. A tutorial of how to play is also included on the main screen.
 
 
 ## Known Issues:
