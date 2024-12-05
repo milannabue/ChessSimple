@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/back">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_background"
+            android:id="@+id/tutorialBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◁"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:textAllCaps="false"
+            android:layout_gravity="start"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="serif"
+                    android:text="Tutorial"
+                    android:textColor="@color/white"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/howToPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="serif"
+                    android:text="How to Play:"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/howToPlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="serif"
+                    android:text="\t\tEvery type of piece moves differently.\n\nPAWNS:\n\t\tThe pieces on your front row are your pawns. They can move only forwards and take only diagonally. They can move twice on their first move, and once thereafter.\n\nROOKS:\n\t\tThe pieces on either corner are your rooks. They can move and overtake only in straight lines\n\nKNIGHT:\n\t\tThe knight is the piece to the left and right of the rooks. Knights are interesting in that they move in 'L' formations. To take a piece with a knight, the taken piece must be at the end of the 'L' path taken by the knight\n\nBISHOP:\n\t\tBishops are to the left and right of the knights, sitting on either side of the royal pair. They can only move and overtake diagonally.\n\nQUEEN:\n\t\tThe queen is the most powerful piece on the board. She can move in any straight or diagonal line away from herself, and has no limit on the amount of squares she can move in those directions.\n\nKING:\n\t\tThe king is the most important piece on the board. Unfortunately, it is also the least powerful. It can move in any direction, but only one square at a time."
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/howToWin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="serif"
+                    android:text="How do you Win?"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/howDoYouWinText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="serif"
+                    android:text="\t\tSimply put, winning requries the capture of the king. However, doing so is much more complicated that.\n\n\t\tThe first step of capturing a king is by putting the other player into check. To put an opponent into check, move one of your pieces into a spot that would give it the opportunity to take the king on your next turn. If a player is in check, there next move MUST get themselves out of it. If the player has no moves that get them out of check (all squares surrounding the king are also covered by one of your pieces), then that player has been checkmated. \n\n\t\tPutting an opposing player into checkmate means you win the game!"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/specialMoves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="serif"
+                    android:text="What else is there?"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/specialMovesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="serif"
+                    android:text="\t\tSome pieces have special ways they can interact with each other or the board.\n\nPROMOTION:\n\t\tIf a pawn makes it to the other side of the board, that pawn can be PROMOTED.\n\n\t\tA pawn can be promoted to either a queen, a rook, a bishop, or a knight. When promoted, the pawn is exchanged for whatever is chosen, and the new piece takes the place of the pawn. The pawn is then removed from the board.\n\nCASTLING:\n\t\tTo castle, click on the king then the position that the king should be at after castling. The king's destination square is 2 squares to the left or right of it, depending on the rook that is being castled.\n\n\t\tCastling is a maneuver that can be helpful to move your king multiple spaces at once while simultaneously getting your rook out of the corner quickly.\n\n\t\tCastling involves both the king and either rook. To castle, multiple requirements must be met first:\n\n\t\t- Neither the castling rook nor the king can be moved before castling. Moving the rook or king back to its original position does not reverse this. Both pieces MUST be in their original positions.\n\n\t\t- The path between the rook and the king must be clear of any pieces. That is, no pieces can exist on any square between the rook and the king.\n\n\t\t- No square on the path between the king's original position and the king's castled position can be covered by an enemy piece. You can imagine that the king is sliding across the board to get to the destination square, and by doing so occupies every square inbetween during that move until it gets to the destination. The same is not true for the rook; the square the rook lands on can be covered by an enemy piece.\n\n\t\t- The king may not be in check to castle."
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginTop="-75dp"
+        android:fontFamily="serif"
+        android:text="ChessSimple."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button_background"
+        android:id="@+id/startGameButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="serif"
+        android:text="new game"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button_background"
+        android:id="@+id/showLeaderboardButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="serif"
+        android:text="leaderboard"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button_background"
+        android:id="@+id/showTutorialButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="how to play"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+
+    <style name="alertDialogue" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/alert_background</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="selectionDialogue" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/alert_background</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:itemTextAppearance">@style/selectionDialogueItem</item>
+    </style>
+
+    <style name="selectionDialogueItem" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

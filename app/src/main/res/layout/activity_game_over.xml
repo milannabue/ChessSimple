@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/back"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/winningMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="White Wins!"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_background"
+            android:id="@+id/newGameButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:fontFamily="serif"
+            android:text="new game"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_background"
+            android:id="@+id/leaderboardButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="leaderboard"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_background"
+            android:id="@+id/mainMenuButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:fontFamily="serif"
+            android:text="main menu"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"/>
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

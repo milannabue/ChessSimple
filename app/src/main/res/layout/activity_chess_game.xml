@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back"
+        android:scaleType="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/button_background"
+                android:id="@+id/gameplay_back_button"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="◁"
+                android:fontFamily="serif"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_gravity="start"
+                android:textAllCaps="false"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="serif"
+            android:text="White's turn"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/board_square"
+                android:scaleType="centerCrop"
+                android:alpha="0.1"/>
+
+            <GridLayout
+                android:id="@+id/boardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="8"
+                android:rowCount="8"
+                android:layout_gravity="center"
+                android:padding="5dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_background"
+            android:id="@+id/pause_button"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="||"
+            android:fontFamily="serif"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

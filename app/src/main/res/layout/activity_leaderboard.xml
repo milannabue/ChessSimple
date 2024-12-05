@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button_background"
+        android:id="@+id/clearLeaderboardButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="625dp"
+        android:fontFamily="serif"
+        android:text="clear leaderboard"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/leaderboardTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:lineSpacingExtra="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="Leaderboard will be displayed here"
+        android:textColor="@color/white"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:text="Leaderboard"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textSize="50dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button_background"
+        android:id="@+id/leaderboardBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◁"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textAllCaps="false"/>
+
+</FrameLayout>
